@@ -1,1 +1,6 @@
-# High-Resolution-EWAS
+#Modified High-Resolution-EWAS
+
+This project is a shared variance version of the HIRE(High Resolution Epigenome-wide association studies) model implemented by Prof. Yang Can from HKUST. Basically the HIRE model is a statistical model which tries to  identify cytosine-phosphate-guanine
+(CpG) sites associated with phenotypes of interest, such as disease status, smoking history and age at cell-type specific level. The paper describing the HIRE model can be found at (https://www.nature.com/articles/s41467-019-10864-z) and the  detailed description of the original HIRE software is at (http://www.bioconductor.org/packages/release/bioc/vignettes/HIREewas/inst/doc/HIREewas.pdf).
+
+My work is to build a shared-variance version of the original HIRE model, which use sigma1 to represent all the sigma_{jk}s and use sigma2 to represent all sigma_{epsilonj}s. Additionally I also implemented a new EM algorithm corresponding to the shared variance version. The calculation details of the EM algorithm and the modified HIRE model can be found in my report uploaded. I designed some new artificial datasets to compare the performance of my model and the HIRE model, details are shown in the code. Note that some comments in the code are written in Chinese.
